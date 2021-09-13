@@ -1,0 +1,330 @@
+/*Limpando as formatações padrões*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 310px) and (max-width: 575.98px) { 
+  
+  .padding-navbar {
+    text-align: center;
+    align-items: center;
+    background: #212529;   
+    font-family: sans-serif;
+    font-size: 13.2336px;
+    justify-content: flex-end;
+    left: 50%;
+    top: 50%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:  20px;
+    width: 18em;
+}
+nav.scrolled {
+  
+  height:15rem;
+}
+
+.fixed-top {
+  position: absolute ;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  
+  .padding-navbar {
+    text-align: center;
+    align-items: center;
+    background: #212529;   
+    font-family: sans-serif;
+    font-size: 13.2336px;
+    justify-content: flex-end;
+    left: 50%;
+    top: 50%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:  20px;
+    width: 18em;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {    
+  
+  .padding-navbar {
+    text-align: center;
+    align-items: center;
+    background: #212529;   
+    font-family: sans-serif;
+    font-size: 13.2336px;
+    justify-content: flex-end;
+    left: 50%;
+    top: 50%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:  20px;
+    width: 18em;
+}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+  .padding-navbar {
+    text-align: center;
+    align-items: center;
+    background: #212529;
+    font-family: sans-serif;
+    font-size: 13.2336px;
+    justify-content: flex-end;
+    left: 50%;
+    top: 50%;
+    
+}
+  nav.scrolled {
+    
+    height:20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 3300.98px){ 
+ 
+  .padding-navbar {
+    text-align: center;
+    align-items: center;
+    background: #21252900;
+    font-family: sans-serif;
+    font-size: 13.2336px;
+    justify-content: flex-end;
+    left: 50%;
+    top: 50%;
+    
+}
+
+nav.scrolled {
+  
+  height:20px;
+}
+.conteudo-titulo{
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+}
+
+.navbar{
+  width: 1354;
+  height: 160.86px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 3.125em;
+    align-items: center;
+
+}
+
+
+.padding-navbar-logo{
+  padding: 1.563em;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.993);
+}
+
+h1{
+  font-size:39.705px;
+  color: #fff;
+  margin: 25px 0 25px;
+
+}
+
+h2{
+  font-size:31.77px;
+  font-family:sans-serif;
+  margin: 0 0 25px;
+  color: #fff;
+
+}
+
+p{
+  color: #fff;
+  font-size:15px;
+}
+  
+a{
+  text-decoration: none;
+}
+
+.bg-marron{
+  background-color: rgb(59, 49, 49);
+  border: 3px solid rgb(48, 38, 38);
+  border-bottom:0;
+  
+
+}
+
+.fonts-jornal{
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-menu{
+    
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navegacao a:hover{
+       
+  color: #000;
+  border-bottom: 3px solid #000;
+  box-shadow: 5px  rgba(0, 0, 0, 0.75);
+
+}
+
+.navegacao a:active{
+position:relative;
+top:5px;
+box-shadow:none;
+transition: 0.5s;
+
+
+}
+
+.navegacao1 a:hover{
+       
+  color: #000;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  box-shadow: 5px  rgba(255, 1, 1, 0.75);
+
+}
+
+.navegacao1 a:active{
+position:relative;
+top:5px;
+box-shadow:none;
+transition: 0.5s;
+
+
+}
+
+.navegacao2 a:hover{
+       
+  color: #000;
+  border-bottom: 3px solid #FFBD29;
+  box-shadow: 5px  #FFBD29;
+
+}
+
+.navegacao2 a:active{
+position:relative;
+top:5px;
+box-shadow:none;
+transition: 0.5s;
+
+
+}
+.noticia-jornal a:hover{
+       
+  color: rgba(0, 0, 0, 0.651);
+  
+}
+
+.noticia-jornal a:active{
+position:relative;
+top:5px;
+box-shadow:none;
+transition: 1s;
+color: #fff;
+
+}
+
+
+
+/* JS mudando o efeito da bara de menu */
+
+nav {
+  position: -webkit-sticky;
+  opacity: 1;
+  /* sticky or fixed are fine */
+  opacity: none;
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  background: black; /* background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+}
+
+/* Estilizando a barra de rolagem */
+
+nav.scrolled {
+  background: #e90d0d;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #383230;
+}
+
+
+
+/*Rodapé*/
+
+.redes{
+  width: 50px;
+  height: 50px;
+}
+
+footer{
+  background: #000;
+  padding: 50px 0 20px 0;
+  position: relative;
+}
+
+footer h4{
+  color: #919496;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+  color: #fff;
+  font-size: .8em;
+}
+
+footer .navbar-nav a:hover{
+  color: #9bf0e1;
+  text-decoration: none;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  float: right;
+  margin: 0 5px;
+}
