@@ -1,0 +1,89 @@
+
+
+.caixa2 li:nth-child(1) span { 
+    background-image: url(https://images.unsplash.com/photo-1629540423048-aadbe10aecf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODc5OA&ixlib=rb-1.2.1&q=80&w=1080);
+}
+.caixa2 li:nth-child(2) span { 
+    background-image: url(https://images.unsplash.com/photo-1619534467396-bb6960fd4d01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODgzMQ&ixlib=rb-1.2.1&q=80&w=1080);
+    animation-delay: 6s; 
+}
+.caixa2 li:nth-child(3) span { 
+    background-image: url(https://images.unsplash.com/photo-1629812617990-d5ffbc574f32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg0Nw&ixlib=rb-1.2.1&q=80&w=1080);
+    animation-delay: 12s; 
+}
+.caixa2 li:nth-child(4) span { 
+    background-image: url(https://images.unsplash.com/photo-1629122217291-0faae4ea9b5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg2MA&ixlib=rb-1.2.1&q=80&w=1080);
+    animation-delay: 18s; 
+}
+.caixa2 li:nth-child(5) span { 
+    background-image: url(https://images.unsplash.com/photo-1629049223901-d3416d318091?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg4MA&ixlib=rb-1.2.1&q=80&w=1080);
+    animation-delay: 24s; 
+}
+.caixa2 li:nth-child(6) span { 
+    background-image: url(https://images.unsplash.com/photo-1629394661462-13ea8fe156ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg5Ng&ixlib=rb-1.2.1&q=80&w=1080);
+    animation-delay: 30s; 
+}
+
+.caixa2 li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.caixa2 li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.caixa2 li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.caixa2 li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.caixa2 li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .caixa2 li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) { 
+    .caixa2 li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .caixa2 li div h3 { font-size: 80px }
+}
+
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1) rotate(3deg);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1) rotate(3deg);
+	}
+	100% { opacity: 0 }
+}

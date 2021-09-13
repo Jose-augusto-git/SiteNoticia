@@ -1,0 +1,100 @@
+/*Configuração padrão*/
+
+body,html{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    height: 100%;
+    
+
+}
+
+
+
+.conteudo{
+    color: #777;
+    background-color: rgb(59, 49, 49);
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+p{
+    margin-bottom: 20px;
+}
+
+/*Efeito Parallax*/
+.caixa-size{
+    width: 1354;
+    background-repeat: no-repeat;
+    background-size: cover; /* cover cobre toda a tela*/
+    background-position: center;
+    background-attachment: fixed;/* faz a imagem ficar fixa para dar o efeito parallax*/ 
+    
+}
+
+.caixa1{
+    height: 55.688em;
+
+}
+
+.caixa{  
+    height: 160.86px;
+     
+}
+.caixa2,.caixa3, .caixa4{
+    position: relative;
+    height: 50%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover; /* cover cobre toda a tela*/
+    background-position: center;
+    background-attachment: fixed;/* faz a imagem ficar fixa para dar o efeito parallax*/
+}
+
+
+
+.caixa-size{
+    background-image: url(../img/jornal2.jpg);
+}
+
+.caixa-size{
+    background-color: black;
+}
+.caixa2{
+    background-image: url(../img/aviao.jpg);
+    background-image: url(../img/receitas.jpg);
+
+
+}
+.caixa3{
+    background-image: url(https://source.unsplash.com/random);
+
+}
+.caixa4{
+    background-image: url(https://source.unsplash.com/random);
+
+}
+
+.conteudo-titulo{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.conteudo-titulo span.titulo{
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;/*espaçamento entre os textos*/
+    text-transform: uppercase;
+}
