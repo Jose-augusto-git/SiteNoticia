@@ -281,12 +281,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 
 body::-webkit-scrollbar-thumb {
-  background-color: #383230;
+  background-color: #000000;
 }
 
 
