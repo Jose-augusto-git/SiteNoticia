@@ -16,6 +16,12 @@
   overflow-y: scroll;
 }
 
+a {
+  color: #fff;
+  text-decoration: underline;
+  
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 310px) and (max-width: 575.98px) { 
   
@@ -144,6 +150,9 @@ nav.scrolled {
 
 }
 
+.card{
+  border: 2px solid rgba(255, 255, 255, 0.836);
+}
 
 .padding-navbar-logo{
   padding: 1.563em;
@@ -251,9 +260,14 @@ transition: 0.5s;
 
 
 }
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+ color: rgba(255, 255, 255, 0.726); 
+}
+
+
 .noticia-jornal a:hover{
        
-  color: rgba(0, 0, 0, 0.651);
+  color: #EA363B;
   
 }
 
@@ -265,8 +279,11 @@ transition: 1s;
 color: #fff;
 
 }
-
-
+a:hover{
+       
+  color: #EA363B;
+  
+}
 
 /* JS mudando o efeito da bara de menu */
 
@@ -368,7 +385,7 @@ ul{
 
 .page-link-color{
   color:rgb(255, 255, 255);
-  background-color: #212529;;
+  background-color: #212529;
 }
 .page-link-color:hover{
   color: #000;
@@ -376,10 +393,12 @@ ul{
 .page-link-color:active{
   box-shadow: 5px 5px 1px black;
   position:relative;
-top:5px;
-box-shadow:none;
-transition: 0.5s;
+  top:5px;
+  box-shadow:none;
+  transition: 0.5s;
 }
+
+
 
 
 /*Rodapé*/
