@@ -4,8 +4,17 @@
     margin: 0;
     padding: 0;
   }
-
-  
+  body, html {
+    background: #212529;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    height: 100%;
+}
+.your_div_class{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 310px) and (max-width: 575.98px) { 
@@ -312,8 +321,6 @@ body::-webkit-scrollbar-thumb {
    
  }
 
-
-
 .texto-esquerda{
   text-align: left;
   padding:.5em;
@@ -322,8 +329,8 @@ body::-webkit-scrollbar-thumb {
 }
 .borda-conteudo{
   padding: 2em;
-  border: 2px solid #3525254b;
-  outline: #e90d0d;
+  border: 2px solid #181A1B;
+  
 }
 
 .borda-conteudo:hover{
@@ -360,7 +367,18 @@ ul{
 }
 
 .page-link-color{
-  color:#fff;
+  color:rgb(255, 255, 255);
+  background-color: #212529;;
+}
+.page-link-color:hover{
+  color: #000;
+}
+.page-link-color:active{
+  box-shadow: 5px 5px 1px black;
+  position:relative;
+top:5px;
+box-shadow:none;
+transition: 0.5s;
 }
 
 
