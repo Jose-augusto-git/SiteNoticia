@@ -1,89 +1,105 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-
-.caixa2 li:nth-child(1) span { 
-    background-image: url(https://images.unsplash.com/photo-1629540423048-aadbe10aecf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODc5OA&ixlib=rb-1.2.1&q=80&w=1080);
-}
-.caixa2 li:nth-child(2) span { 
-    background-image: url(https://images.unsplash.com/photo-1619534467396-bb6960fd4d01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODgzMQ&ixlib=rb-1.2.1&q=80&w=1080);
-    animation-delay: 6s; 
-}
-.caixa2 li:nth-child(3) span { 
-    background-image: url(https://images.unsplash.com/photo-1629812617990-d5ffbc574f32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg0Nw&ixlib=rb-1.2.1&q=80&w=1080);
-    animation-delay: 12s; 
-}
-.caixa2 li:nth-child(4) span { 
-    background-image: url(https://images.unsplash.com/photo-1629122217291-0faae4ea9b5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg2MA&ixlib=rb-1.2.1&q=80&w=1080);
-    animation-delay: 18s; 
-}
-.caixa2 li:nth-child(5) span { 
-    background-image: url(https://images.unsplash.com/photo-1629049223901-d3416d318091?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg4MA&ixlib=rb-1.2.1&q=80&w=1080);
-    animation-delay: 24s; 
-}
-.caixa2 li:nth-child(6) span { 
-    background-image: url(https://images.unsplash.com/photo-1629394661462-13ea8fe156ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMTM5ODg5Ng&ixlib=rb-1.2.1&q=80&w=1080);
-    animation-delay: 30s; 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 
-.caixa2 li:nth-child(2) div { 
-    animation-delay: 6s; 
-}
-.caixa2 li:nth-child(3) div { 
-    animation-delay: 12s; 
-}
-.caixa2 li:nth-child(4) div { 
-    animation-delay: 18s; 
-}
-.caixa2 li:nth-child(5) div { 
-    animation-delay: 24s; 
-}
-.caixa2 li:nth-child(6) div { 
-    animation-delay: 30s; 
-}
-
-@keyframes imageAnimation { 
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-@keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
+/* Position the "next button" to the right */
+.next {
+  right: -2em;
+  border-radius: 3px 0 0 3px;
 }
 
-.no-cssanimations .caixa2 li span{
-	opacity: 1;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-@media screen and (max-width: 1140px) { 
-    .caixa2 li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) { 
-    .caixa2 li div h3 { font-size: 80px }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-@keyframes imageAnimation { 
-	0% {
-	    opacity: 0;
-	    animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 1;
-	    transform: scale(1.05);
-	    animation-timing-function: ease-out;
-	}
-	17% {
-	    opacity: 1;
-	    transform: scale(1.1) rotate(3deg);
-	}
-	25% {
-	    opacity: 0;
-	    transform: scale(1.1) rotate(3deg);
-	}
-	100% { opacity: 0 }
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.papel{
+	
+    width:1000px;
+    height:300px;
+}
+
+.fade:not(.show) {
+     opacity: 10; 
 }

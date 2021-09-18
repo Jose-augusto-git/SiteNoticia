@@ -149,8 +149,13 @@ h1{
   font-size:39.705px;
   color: #fff;
   margin: 25px 0 25px;
-
+  width: 100%;
+  height: 100%vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
+
 
 h2{
   font-size:31.77px;
@@ -289,6 +294,74 @@ body::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
 
+.p-50{
+ /* padding-top: 12em;
+  padding-right: 3em;
+  padding-left: 3em;*/
+  padding: 0em 1em 0 0;
+  text-align: justify;
+  
+}
+
+.p-49{
+  /* padding-top: 12em;
+   padding-right: 3em;
+   padding-left: 3em;*/
+   padding: 12em 1em 0 0;
+   text-align: justify;
+   
+ }
+
+
+
+.texto-esquerda{
+  text-align: left;
+  padding:.5em;
+ 
+
+}
+.borda-conteudo{
+  padding: 2em;
+  border: 2px solid #3525254b;
+  outline: #e90d0d;
+}
+
+.borda-conteudo:hover{
+  box-shadow: 5px 5px 1px black;
+  
+}
+.borda-conteudo:active{
+  box-shadow: 5px 5px 1px black;
+  position:relative;
+top:5px;
+box-shadow:none;
+transition: 0.5s;
+  
+}
+
+
+.teste{
+            width: 100%;
+            height: 100%vh;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+           
+            cursor:pointer;
+        }
+
+.centralizar{
+ align-items: center;
+ border: 2px solid #e90d0d;
+
+}
+ul{
+  list-style-type:none;
+}
+
+.page-link-color{
+  color:#fff;
+}
 
 
 /*Rodapé*/
