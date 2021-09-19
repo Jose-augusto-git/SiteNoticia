@@ -14,6 +14,7 @@
 - [ ] Criar Páginas no rodapé
  
  [Acesse o site noticias](https://jose-augusto-git.github.io/SiteNoticia/)
-![screencapture-127-0-0-1-5500-index-html-2021-09-16-18_59_54](https://user-images.githubusercontent.com/73261477/133691909-71e7dbea-f108-4ed6-90cd-06ae696c7aef.png)
+ ![screencapture-jose-augusto-git-github-io-SiteNoticia-2021-09-18-23_54_54](https://user-images.githubusercontent.com/73261477/133913944-1d106cc7-8446-4a25-9fdb-032903812c78.png)
+
 
 
