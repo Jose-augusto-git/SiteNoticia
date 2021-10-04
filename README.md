@@ -5,7 +5,8 @@
  lista de desenvolvimento:
 
 - [x] Criar Página Principal
-- [ ] Criar Página Últimas Nóticias
+- [x] Tradução de páginas
+- [x] Criar Página Últimas Nóticias
 - [ ] Criar Página Entretenimento
 - [ ] Criar Página Politica
 - [ ] Criar Página Internacional
