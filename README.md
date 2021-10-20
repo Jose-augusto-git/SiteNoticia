@@ -7,7 +7,6 @@
 - [x] Criar Página Principal
 - [x] Tradução de páginas
 - [x] Criar Página Últimas Nóticias
-- 
  
  [Acesse o site noticias](https://jose-augusto-git.github.io/SiteNoticia/)
  
