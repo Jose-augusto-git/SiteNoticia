@@ -7,12 +7,7 @@
 - [x] Criar Página Principal
 - [x] Tradução de páginas
 - [x] Criar Página Últimas Nóticias
-- [ ] Criar Página Entretenimento
-- [ ] Criar Página Politica
-- [ ] Criar Página Internacional
-- [ ] Criar Página Esporte
-- [ ] Criar Página Assine
-- [ ] Criar Páginas no rodapé
+- 
  
  [Acesse o site noticias](https://jose-augusto-git.github.io/SiteNoticia/)
  
